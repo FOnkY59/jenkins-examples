@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Compile') {
+            steps {
+				// Telecharge le code depuis GIT
+				git 'https://github.com/FOnkY59/firstJava.git'
+				
+				// Compile le code java
+                bat '''javac HelloWorld.java'''
+			}
+        }
+		stage('Run Java') {
+			steps {
+				bat '''java HelloWorld'''
+			}
+		}
+	}
+}
