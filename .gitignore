@@ -1,0 +1,29 @@
+# Personal SQLite temp files
+databases
+*.db
+
+# PYTHON / PYCHARM
+*.pyc
+__pycache__/
+venv
+.idea
+
+# vscode temp files
+.vscode
+
+# MAC system files
+.DS_Store
+
+# WINDOWS system files
+desktop.ini
+
+# Java / MAVEN
+*.class
+target/
+.settings
+.project
+.classpath
+
+# personal temp files
+*temp*
+*uncommited*
